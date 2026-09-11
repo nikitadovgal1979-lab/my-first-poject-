@@ -2,6 +2,9 @@
   width: 100%;
   height: auto;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   color: inherit;
 }
@@ -162,11 +165,28 @@ body {
   display: inline-block;
 }
 .footer__bottom {
+  width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: 100px;
-  color: #dedede;
-  opacity: 0.7;
-  font-size: 15px;
+}
+
+.footrt__text {
+  display: flex;
+  flex-direction: row; /* Возвращаем элементы в одну строку */
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px; /* Отступы слева и справа для краев */
+}
+
+.ty {
+  margin-left: 0;
+  text-align: left;
+}
+
+.images {
+  display: flex;
+  gap: 25px; /* Расстояние между иконками */
+  margin-right: 0;
 }
 .name {
   color: white !important;
@@ -176,7 +196,7 @@ body {
   display: flex;
   gap: 30px;
 }
-.footrt__text {
+.footer__text {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
@@ -352,6 +372,28 @@ body {
   }
 }
 @media (max-width: 620px) {
+  .footer__text {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column; /* Ставит элементы друг под друга */
+    align-items: center; /* Выравнивает всё по центру */
+    gap: 20px; /* Расстояние между текстом и иконками */
+    margin-bottom: 50px;
+  }
+
+  .ty {
+    margin-left: 0; /* Убираем отступ слева, который сдвигал текст */
+    width: 100%;
+    text-align: center;
+  }
+
+  .images {
+    margin-right: 0; /* Убираем отступ справа */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
   .parent {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

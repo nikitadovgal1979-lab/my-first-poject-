@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>codevobe</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,9 +23,9 @@
           </div>
 
           <div class="header__top-span">
-            <span><a href="img">Home</a></span>
-            <span><a href="img">Work</a></span>
-            <span><a href="img">Contact</a></span>
+            <span><a href="#home">Home</a></span>
+            <span><a href="#work">Work</a></span>
+            <span><a href="#contack">Contact</a></span>
           </div>
 
           <!-- Кнопка гамбургера для мобильных -->
@@ -40,9 +40,9 @@
             &times;
           </button>
           <nav class="mobile-nav">
-            <a href="img">HOME</a>
-            <a href="img">WORK</a>
-            <a href="img">CONTACT</a>
+            <a href="#home">HOME</a>
+            <a href="#work">WORK</a>
+            <a href="#contack">CONTACT</a>
           </nav>
         </div>
         <script>
@@ -60,7 +60,7 @@
         </script>
         <div class="container">
           <div class="header__info">
-            <p class="header__p">Covibe</p>
+            <p id="home" class="header__p">Covibe</p>
             <p class="header__container">
               Co-working spaces for <br />
               tech startups
@@ -89,13 +89,17 @@
           </p>
           <p class="section__text">launch prototype</p>
         </div>
-        <img src="im/unsplash_yWwob8kwOCk.png" alt="img" class="section__image" />
+        <img
+          src="im/unsplash_yWwob8kwOCk.png"
+          alt="img"
+          class="section__image"
+        />
       </section>
       <section class="second__section">
         <div class="first__img">
           <img class="img" src="im/Rectangle 9.png" alt="img" />
           <div class="second__div">
-            <p class="first__img-solution">solution 1</p>
+            <p id="work" class="first__img-solution">solution 1</p>
             <p class="first__img-text">
               Lorem ipsum dolor sit amet, consectetur <br />
               adipiscing elit
@@ -134,7 +138,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__text">
-            <div class="ty">
+            <div id="contack" class="ty">
               <p class="">
                 Made by <span class="name">Your Name</span> — Copyright 2021
               </p>
