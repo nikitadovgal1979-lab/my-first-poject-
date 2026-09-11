@@ -21,12 +21,43 @@
             <img src="im/Group 2.png" alt="" />
             <p class="header__logo-p">Logo Here</p>
           </div>
+
           <div class="header__top-span">
             <span><a href="">Home</a></span>
             <span><a href="">Work</a></span>
             <span><a href="">Contact</a></span>
           </div>
+
+          <!-- Кнопка гамбургера для мобильных -->
+          <button class="burger-btn" id="burgerBtn" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <button class="close-btn" id="closeBtn" aria-label="Close menu">
+            &times;
+          </button>
+          <nav class="mobile-nav">
+            <a href="">HOME</a>
+            <a href="">WORK</a>
+            <a href="">CONTACT</a>
+          </nav>
+        </div>
+        <script>
+          const burgerBtn = document.getElementById("burgerBtn");
+          const closeBtn = document.getElementById("closeBtn");
+          const mobileMenu = document.getElementById("mobileMenu");
+
+          burgerBtn.addEventListener("click", () => {
+            mobileMenu.classList.add("active");
+          });
+
+          closeBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("active");
+          });
+        </script>
         <div class="container">
           <div class="header__info">
             <p class="header__p">Covibe</p>
@@ -38,9 +69,9 @@
 
           <div class="parent">
             <div class="div1">client</div>
-            <div class="div1">role</div>
-            <div class="div1">industry</div>
-            <div class="div1">duration</div>
+            <div class="div1 div2">role</div>
+            <div class="div1 div3">industry</div>
+            <div class="div1 div4">duration</div>
             <div class="div5">Covibe</div>
             <div class="div6">Product Designer</div>
             <div class="div7">Co-working</div>
